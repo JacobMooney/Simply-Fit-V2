@@ -74,23 +74,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-/* Colors and Fonts */
-/* Terracotta
-#F9987C
-#DD7459
-#C6593F
-#AA422C
-Tundora 
-#807873
-#625A57
-#4C4542
-#3E3735
-Main Combo
-#DD7459
-#4C4542 */
-
+/* Fonts */
 body {
+  color: #3E3735;
   font-family: Roboto Slab, Arial, Helvetica, sans-serif;
 }
 .logo {
