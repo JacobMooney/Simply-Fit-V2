@@ -41,7 +41,9 @@ nav {
 ul {
   display: flex;
   flex-direction: column;
+  visibility: hidden;
 }
+
 li {
   font-weight: 600;
   font-size: 0.9rem;
@@ -116,10 +118,9 @@ section {
   width: 100%;
   min-height: 24vh;
   border: 2px solid var(--font-color);
-}
-
-@media screen {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 48em) {
