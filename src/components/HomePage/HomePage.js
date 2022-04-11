@@ -21,7 +21,7 @@ function HomePage() {
                   <button className="btn">Education</button>
                 </Link>
                 <Link to="/options">
-                  <button className="btn">Training</button>
+                  <button className="btn">Routine</button>
                 </Link>
               </div>
             </div>

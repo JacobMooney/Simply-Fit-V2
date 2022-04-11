@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../Nav/Navbar";
 import "./Nutrition.css";
-// import TDEEform from "./TDEEComponent";
+import TDEEform from "./TDEEComponent";
 
 class Nutrition extends Component {
   constructor(props) {
@@ -56,7 +55,7 @@ class Nutrition extends Component {
       <body>
         <Navbar />
         <main className="container infoArea">
-          <h1>Basics of nutrition for training</h1>
+          <h2>Basics of nutrition for training</h2>
           <p>
             In order to make the most out of your training journey, it is
             important to know the basics about nutrition and lifting. This
@@ -69,6 +68,7 @@ class Nutrition extends Component {
             about calories, macronutrients, micronutrients, and supplements.
           </p>
           <h3>Calories</h3>
+          <hr />
           <p>
             Calories are used to describe the energy amount that can be gained
             from consuming any given food or drink. This is the top number on
@@ -92,13 +92,14 @@ class Nutrition extends Component {
                 When trying to gain or lose weight this is the primary number
                 used to determine how much you should be eating.{" "}
               </p>
-              <div>- Below you can calculate your TDEE-</div>
-              <div>{/* <TDEEform handleChange={this.handleChange} /> */}</div>
+              <br/>
+              <div>Below you can calculate your TDEE, and the result will be used at the bottom of the page for an example application.</div>
+              <div><TDEEform handleChange={this.handleChange} /></div>
             </div>
           </div>
           <h3>
             Daily Calories:
-            <span>{calcCalories}</span>
+            <span> {calcCalories}</span>
           </h3>
           <h2>Macronutrients</h2>
           <p>
@@ -106,7 +107,8 @@ class Nutrition extends Component {
             calories in the things we eat. In the context of fitness and weight
             training we are primarily interested in 3 major macronutrients;
           </p>
-          <h5>Protein</h5>
+          <h4>Protein</h4>
+          <hr />
           <p>
             Proteins are the building blocks your body uses to grow, build, and
             repair. This macronutrient is primarily found in meats, poultry,
@@ -116,7 +118,8 @@ class Nutrition extends Component {
             building protein is one of the most important macronutrients since
             they provide the building materials to grow.
           </p>
-          <h5>Carbohydrates</h5>
+          <h4>Carbohydrates</h4>
+          <hr />
           <p>
             Carbohydrates are the most readily usable sources of energy for the
             cells. With the exception of fiber, all carbohydrates get broken
@@ -125,7 +128,8 @@ class Nutrition extends Component {
             are vital and necessary in order to maintain energy levels
             especially when dieting or trying to lose weight.
           </p>
-          <h5>Fat</h5>
+          <h4>Fat</h4>
+          <hr />
           <p>
             Fats are similar to carbohydrates, but they are more dense and as a
             result contain more calories. While many fad diets may demonize
@@ -162,7 +166,7 @@ class Nutrition extends Component {
             result. A smaller deficit/surplus is typically easier to follow but
             obviously will result in slower results. Below is an example table
             showing the calories needed to gain or lose weight for someone with
-            a TDEE of {calcCalories} calories.
+            a TDEE of <strong>{calcCalories}</strong> calories.
           </p>
           <table className="infoTable">
             <thead>

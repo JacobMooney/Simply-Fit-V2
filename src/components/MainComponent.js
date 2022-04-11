@@ -41,7 +41,7 @@ class MainComponent extends Component {
     render() {
         return (
             <Switch>
-                <Route  path='/home' exact component={HomePage} />
+                <Route path='/home' exact component={HomePage} />
                 <Route path='/nutrition' exact component={Nutrition} />
                 <Redirect to='/home' />
             </Switch>
