@@ -1,29 +1,13 @@
 import { Link } from "react-router-dom";
+import Navbar from "../Nav/Navbar";
 import "./HomePage.css";
 
 function HomePage() {
   return (
     <body>
-      <nav>
-        <div className="navContainer">
-          <a className="logo" href to="/home">
-            Simply Fit
-          </a>
-          <ul>
-            <li>
-              <Link to="/nutrition"> Nutrition</Link>
-            </li>
-            <li>
-              <Link to="/education">Fitness</Link>
-            </li>
-            <li>
-              <Link to="/options">Routines</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
       <div className="container">
-        <header>
+        <header className="bannerArea">
           <div>
             <div>
               <div>
@@ -34,16 +18,16 @@ function HomePage() {
             <div>
               <div>
                 <Link to="/nutrition">
-                  <button>Education</button>
+                  <button className="btn">Education</button>
                 </Link>
                 <Link to="/options">
-                  <button>Training</button>
+                  <button className="btn">Training</button>
                 </Link>
               </div>
             </div>
           </div>
         </header>
-        <section>
+        <section className="cardArea">
           <div className="infoCard">
             <h2>NUTRITION</h2>
             <p>
@@ -51,7 +35,7 @@ function HomePage() {
               how to fuel yourself to reach your goals.
             </p>
             <Link to="/nutrition">
-              <button>Get Started!</button>
+              <button className="btn">Get Started!</button>
             </Link>
           </div>
           <div className="infoCard">
@@ -61,7 +45,7 @@ function HomePage() {
               training.
             </p>
             <Link to="/education">
-              <button>Get Started!</button>
+              <button className="btn">Get Started!</button>
             </Link>
           </div>
           <div className="infoCard">
@@ -70,7 +54,7 @@ function HomePage() {
               Use our routine maker to find a program for your specific goals.
             </p>
             <Link to="/options">
-              <button>Get Started!</button>
+              <button className="btn">Get Started!</button>
             </Link>
           </div>
         </section>

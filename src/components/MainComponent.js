@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import HomePage from './HomePage/HomePage';
+import Nutrition from './Nutrition/Nutrition';
 
 class MainComponent extends Component {
     constructor(props) {
@@ -40,7 +41,9 @@ class MainComponent extends Component {
     render() {
         return (
             <Switch>
-                <Route path='/home' component={HomePage} />
+                <Route  path='/home' exact component={HomePage} />
+                <Route path='/nutrition' exact component={Nutrition} />
+                <Redirect to='/home' />
             </Switch>
         );
     }

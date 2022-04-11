@@ -1,0 +1,42 @@
+.logo {
+  font-size: 1.6rem;
+  font-family: Fira Sans;
+}
+
+nav {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: var(--main-color);
+  border-bottom: 2px solid var(--font-color);
+}
+
+.navContainer {
+  margin: 0 auto;
+  width: min(80%, 80em);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+}
+
+.navLinks li {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0 0.2em;
+  list-style-type: none;
+}
+
+@media (min-width: 50em) {
+  .navLinks {
+    visibility: visible;
+  }
+}

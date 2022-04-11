@@ -1,0 +1,30 @@
+
+.infoArea {
+  background-color: #fff;
+}
+
+.infoArea > * + * {
+  margin-top: 1em;
+}
+
+.infoTable {
+  border-radius: 0.5em;
+  background-color: var(--info-box-color);
+  width: 100%;
+  min-height: 24vh;
+  border: 2px solid var(--font-color);
+}
+
+.infoTable > tbody > tr > td,
+th {
+  border: 1px solid var(--font-color);
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 50em) {
+  .infoTable {
+    padding: 2em 2em;
+    font-size: 1.1rem;
+  }
+}
