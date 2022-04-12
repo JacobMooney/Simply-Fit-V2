@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Nav/Navbar";
 import "./Nutrition.css";
 import TDEEform from "./TDEEComponent";
@@ -170,7 +171,8 @@ class Nutrition extends Component {
             result. A smaller deficit/surplus is typically easier to follow but
             obviously will result in slower results. Below is an example table
             showing the calories needed to gain or lose weight for someone with
-            a TDEE of <strong>{calcCalories ? calcCalories : "Invalid Values"}</strong>{" "}
+            a TDEE of{" "}
+            <strong>{calcCalories ? calcCalories : "Invalid Values"}</strong>{" "}
             calories.
           </p>
           <table className="infoTable">
@@ -205,6 +207,11 @@ class Nutrition extends Component {
               </tr>
             </tbody>
           </table>
+          <div className="bottomBtn">
+            <Link to="/education">
+              <button className="btn">Exercises --></button>
+            </Link>
+          </div>
         </main>
       </body>
     );

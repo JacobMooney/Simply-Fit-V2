@@ -56,10 +56,20 @@
 .tdeeForm > * > label {
   display: block;
 }
+.bottomBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
 
 @media (min-width: 50em) {
   .infoTable {
     padding: 2em 2em;
     font-size: 1.1rem;
   }
+  .bottomBtn {
+    justify-content: flex-end;
+  }
+  
 }

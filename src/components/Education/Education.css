@@ -55,3 +55,17 @@ img.diagram {
   padding: 0.5rem;
   margin: 0 auto;
 }
+
+.bottomBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 50em) {
+  .bottomBtn {
+    justify-content: flex-end;
+  }
+  
+}

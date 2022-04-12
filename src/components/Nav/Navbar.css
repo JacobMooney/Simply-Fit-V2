@@ -31,10 +31,17 @@ nav {
 }
 
 .navLinks li {
+  position: inherit;
   font-weight: 600;
   font-size: 1rem;
   margin: 0 0.2em;
   list-style-type: none;
+  border-bottom: 2px solid transparent;
+  transition: 200ms;
+}
+
+.navLinks li:hover{
+  border-bottom: 2px solid var(--font-color);
 }
 
 @media (min-width: 50em) {

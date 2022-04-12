@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import hierarchy from "../../shared/img/hierarchy.png";
 import overlap from "../../shared/img/overlap.png";
 import Navbar from "../Nav/Navbar";
@@ -350,6 +351,11 @@ function Education() {
             the workout like the bodybuilding routine.
           </p>
         </ul>
+        <div className="bottomBtn">
+            <Link to="/routine">
+              <button className="btn">Routine --></button>
+            </Link>
+          </div>
       </div>
     </body>
   );

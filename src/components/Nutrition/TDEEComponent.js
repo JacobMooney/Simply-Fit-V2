@@ -39,7 +39,7 @@ function TDEEform(props) {
           type="select"
           style={{ width: 80 }}
         >
-          <option value={0}>0 in</option>
+          <option value={1}>0 in</option>
           <option value={1}>1 in</option>
           <option value={2}>2 in</option>
           <option value={3}>3 in</option>
@@ -56,6 +56,7 @@ function TDEEform(props) {
       <div onChange={props.handleChange}>
         <label htmlFor="weightSelect">Weight: </label>
         <input
+          style={{ width: "98%" }}
           placeholder="Weight"
           id="weightSelect"
           name="weight"
@@ -63,12 +64,12 @@ function TDEEform(props) {
           maxLength={3}
           min={0}
           max={999}
-          pattern="[0-9]{3}"
         />
       </div>
       <div onChange={props.handleChange}>
         <label htmlFor="weightSelect">Age: </label>
         <input
+          style={{ width: "98%" }}
           placeholder="Age"
           id="weightSelect"
           name="age"
@@ -76,13 +77,12 @@ function TDEEform(props) {
           maxLength={2}
           min={0}
           max={99}
-          pattern="[0-9]{2}"
         />
       </div>
       <div onChange={props.handleChange}>
         <label htmlFor="activitySelect">Activity Level: </label>
         <select
-          style={{ width: "auto" }}
+          style={{ width: "98%" }}
           id="activitySelect"
           name="level"
           type="select"
