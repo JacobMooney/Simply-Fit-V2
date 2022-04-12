@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
+import Education from './Education/Education';
 import HomePage from './HomePage/HomePage';
 import Nutrition from './Nutrition/Nutrition';
 
@@ -43,6 +44,7 @@ class MainComponent extends Component {
             <Switch>
                 <Route path='/home' exact component={HomePage} />
                 <Route path='/nutrition' exact component={Nutrition} />
+                <Route path='/education' exact component={Education} />
                 <Redirect to='/home' />
             </Switch>
         );
