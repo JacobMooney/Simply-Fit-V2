@@ -1,5 +1,5 @@
 .logo {
-  margin: 0.5em 0;
+  margin-top: 0.2em;
   font-size: 1.6rem;
   font-family: Fira Sans;
 }
@@ -15,10 +15,11 @@ nav {
 }
 
 .navContainer {
+  line-height: 1;
   margin: 0 auto;
   width: min(84%, 80em);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -27,17 +28,20 @@ nav {
   padding: 0;
   display: flex;
   flex-direction: row;
-  visibility: hidden;
 }
 
 .navLinks li {
   font-weight: 600;
-  font-size: 0.2rem;
+  font-size: 1rem;
   margin: 0 0.2em;
   list-style-type: none;
 }
 
 @media (min-width: 50em) {
+  .navContainer {
+    line-height: 1.4;
+    flex-direction: row;
+  }
   .navLinks {
     visibility: visible;
   }

@@ -39,7 +39,7 @@ function HomePage() {
             </Link>
           </div>
           <div className="infoCard">
-            <h2>TRAINING</h2>
+            <h2>EXERCISE</h2>
             <p>
               Explore the ideas and concepts that go into fitness and weight
               training.

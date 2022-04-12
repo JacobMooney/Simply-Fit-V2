@@ -13,7 +13,7 @@ function Navbar() {
               <Link to="/nutrition">Nutrition //</Link>
             </li>
             <li>
-              <Link to="/education">Fitness //</Link>
+              <Link to="/education">Exercise //</Link>
             </li>
             <li>
               <Link to="/options">Routines</Link>

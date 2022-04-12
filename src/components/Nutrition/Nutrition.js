@@ -49,8 +49,7 @@ class Nutrition extends Component {
       (655 + 9.6 * kgWeight + 1.8 * cmHeight - 4.7 * this.state.age) *
         this.state.level
     );
-    const calcCalories = this.state.gender === 1 ? maleOption : femaleOption;
-    console.log(this.state);
+    let calcCalories = this.state.gender === 1 ? maleOption : femaleOption;
     return (
       <body>
         <Navbar />
@@ -92,14 +91,19 @@ class Nutrition extends Component {
                 When trying to gain or lose weight this is the primary number
                 used to determine how much you should be eating.{" "}
               </p>
-              <br/>
-              <div>Below you can calculate your TDEE, and the result will be used at the bottom of the page for an example application.</div>
-              <div><TDEEform handleChange={this.handleChange} /></div>
+              <br />
+              <div>
+                Below you can calculate your TDEE, and the result will be used
+                at the bottom of the page for an example application.
+              </div>
+              <div>
+                <TDEEform handleChange={this.handleChange} />
+              </div>
             </div>
           </div>
           <h3>
             Daily Calories:
-            <span> {calcCalories}</span>
+            <span> {calcCalories ? calcCalories : "Invalid Values"}</span>
           </h3>
           <h2>Macronutrients</h2>
           <p>
@@ -166,7 +170,8 @@ class Nutrition extends Component {
             result. A smaller deficit/surplus is typically easier to follow but
             obviously will result in slower results. Below is an example table
             showing the calories needed to gain or lose weight for someone with
-            a TDEE of <strong>{calcCalories}</strong> calories.
+            a TDEE of <strong>{calcCalories ? calcCalories : "Invalid Values"}</strong>{" "}
+            calories.
           </p>
           <table className="infoTable">
             <thead>
