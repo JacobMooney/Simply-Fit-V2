@@ -353,7 +353,7 @@ function Education() {
         </ul>
         <div className="bottomBtn">
             <Link to="/routine">
-              <button className="btn">Routine --></button>
+              <button className="btn">{"Routine -->"}</button>
             </Link>
           </div>
       </div>
