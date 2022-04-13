@@ -1,5 +1,6 @@
 import React from 'react';
-import DayRoutine from './RoutineComponent';
+import DayRoutine from './DayBuilder';
+import './Routine.css';
 
 
 function CardioOption({ option }) {
@@ -32,8 +33,8 @@ function NumOfDays({ selections }) {
     for (let i = 0; i < selections.daysSelected; i++) {
         nDays.push(
             <div>
-                <div>
-                    <h3>Workout: {i + 1}</h3>
+                <div className='day'>
+                    <h3 className='dayHeader'>Workout: {i + 1}</h3>
                     <ul>
                         <CardioOption option={selections.cardio} />
                         <DayRoutine id={i} dayNum={i + 1} goalType={selections.goalSelected} selections={selections} />
@@ -49,9 +50,9 @@ function NumOfDays({ selections }) {
 function WorkoutBuilder(props) {
     const selections = props.selections;
     return (
-        <>
+        <div className='daysFlex'>
             <NumOfDays selections={selections} />
-        </>
+        </div>
 
     );
 }

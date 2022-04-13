@@ -193,7 +193,8 @@ function Education() {
           that often routines will be oriented around a specific training goal.
           Because focusing on one goal at a time often is the most efficient way
           to train for each area. It's recommended to start with strength
-          training, then change routines when the gains start to diminish and a good strength base is formed.
+          training, then change routines when the gains start to diminish and a
+          good strength base is formed.
         </p>
 
         <ul>
@@ -299,13 +300,9 @@ function Education() {
         </p>
         <p>
           Here is a link to an
-          <a className="eduLink" href="http://www.fitnotesapp.com/">
-            Android
-          </a>
+          <a className="eduLink" href="http://www.fitnotesapp.com/"> Android </a>
           and
-          <a className="eduLink" href="https://www.getfitnotes.com/">
-            IOS
-          </a>
+          <a className="eduLink" href="https://www.getfitnotes.com/"> IOS </a>
           version of the same app that is great for tracking your gym progress.
           Using these in combination with the routine builder, you will be able
           to start working out on the right foot.
@@ -352,10 +349,10 @@ function Education() {
           </p>
         </ul>
         <div className="bottomBtn">
-            <Link to="/routine">
-              <button className="btn">{"Routine -->"}</button>
-            </Link>
-          </div>
+          <Link to="/routine">
+            <button className="btn">{"Routine -->"}</button>
+          </Link>
+        </div>
       </div>
     </body>
   );

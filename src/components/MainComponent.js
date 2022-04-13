@@ -3,8 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Education from "./Education/Education";
 import HomePage from "./HomePage/HomePage";
 import Nutrition from "./Nutrition/Nutrition";
-import OptionsForm from "./Routine/OptionsFormComponent";
-import WorkoutDisplay from './Routine/WorkoutDisplayComponent';
+import WorkoutDisplay from "./Routine/WorkoutDisplay";
 
 class MainComponent extends Component {
   constructor(props) {
@@ -42,19 +41,14 @@ class MainComponent extends Component {
         <Route path="/education" exact component={Education} />
         <Route
           exact
-          path="/options"
+          path="/routine"
           render={() => (
-            <OptionsForm
-              formInfo={this.state}
+            <WorkoutDisplay
+              selectionInfo={this.state}
               handleChange={this.handleChange}
               toggleChange={this.toggleChangeHandler}
             />
           )}
-        />
-        <Route
-          exact
-          path="/workoutDisplay"
-          render={() => <WorkoutDisplay selectionInfo={this.state} />}
         />
         <Redirect to="/home" />
       </Switch>

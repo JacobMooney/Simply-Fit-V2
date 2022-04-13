@@ -20,8 +20,8 @@ function HomePage() {
                 <Link to="/nutrition">
                   <button className="btn">Education</button>
                 </Link>
-                <Link to="/options">
-                  <button className="btn">Routine</button>
+                <Link to="/routine">
+                  <button className="btn">Routines</button>
                 </Link>
               </div>
             </div>
@@ -53,7 +53,7 @@ function HomePage() {
             <p>
               Use our routine maker to find a program for your specific goals.
             </p>
-            <Link to="/options">
+            <Link to="/routine">
               <button className="btn">Get Started!</button>
             </Link>
           </div>

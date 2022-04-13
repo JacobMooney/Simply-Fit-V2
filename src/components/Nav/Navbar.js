@@ -10,13 +10,13 @@ function Navbar() {
           </Link>
           <ul className="navLinks">
             <li>
-              <Link to="/nutrition">Nutrition //</Link>
+              <Link to="/nutrition">Nutrition</Link> //
             </li>
             <li>
-              <Link to="/education">Exercise //</Link>
+              <Link to="/education">Exercise</Link> //
             </li>
             <li>
-              <Link to="/options">Routines</Link>
+              <Link to="/routine">Routines</Link>
             </li>
           </ul>
         </div>
