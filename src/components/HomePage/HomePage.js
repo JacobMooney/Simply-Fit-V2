@@ -12,7 +12,7 @@ function HomePage() {
             <div>
               <div>
                 <h1 className="banner">Simplifying Fitness</h1>
-                <p>For Everyone</p>
+                <p>For Anyone</p>
               </div>
             </div>
             <div>
