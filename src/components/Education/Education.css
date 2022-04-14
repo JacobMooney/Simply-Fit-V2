@@ -1,10 +1,10 @@
 .eduArea {
   margin: 2px auto 0;
   background-color: #fff;
-  padding: 1em 1em 0em;
+  padding: 0.5em 1em 0em;
 }
 
-.eduArea > * {
+.eduArea > *+* {
   margin-top: 1em;
 }
 

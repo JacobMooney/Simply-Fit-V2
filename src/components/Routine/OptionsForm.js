@@ -20,6 +20,7 @@ function OptionsForm(props) {
         </div>
         <h5>Workout for {currentInfo.daysSelected} days a week.</h5>
       </div>
+      <hr />
       <div>
         <h3>Training Goal:</h3>
         <div className="btnGroup">
@@ -50,6 +51,7 @@ function OptionsForm(props) {
         </div>
         <h5>Selected: {currentInfo.goalSelected}</h5>
       </div>
+      <hr />
       <div>
         <h3>Additional Options:</h3>
         <div className="btnGroup">

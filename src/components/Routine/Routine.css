@@ -1,4 +1,4 @@
-.outterFlex {
+.outerFlex {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,12 +13,24 @@
   background-color: var(--info-box-color);
   border: 2px solid var(--font-color);
   width: 100%;
-  margin: 1em auto;
+  margin: 2em auto;
   padding: 0.2em;
 }
-
 .innerFlex > div > h3 {
+  font-size: 1.2rem;
   text-align: center;
+}
+.innerFlex > div + hr {
+  width: 202px;
+  height: 22px;
+}
+.innerFlex > div > hr {
+  height: 2px;
+  width: 80%;
+}
+.innerFlex > div > h5{
+  margin: 0.5em auto;
+  font-size: 1.2rem;
 }
 .day {
   border-left: 2px solid var(--font-color);
@@ -61,6 +73,8 @@ div.exercise:nth-child(1){
   border-top: none;
 }
 div.exercise:nth-last-of-type(1){
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
   border-bottom: none;
 }
 .exercise:nth-of-type(2n) {
@@ -112,5 +126,12 @@ div.exercise:nth-last-of-type(1){
   }
   .btnGroup{
     flex-direction: row;
+  }
+  .innerFlex > div > h3 {
+    font-size: 1.4rem;
+  }
+  .innerFlex > div + hr {
+    height: 2px;
+    width: 50%;
   }
 }

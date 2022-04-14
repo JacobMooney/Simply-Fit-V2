@@ -27,9 +27,9 @@ function Education() {
           your physique, visual changes to the body are often slow. Motivation
           to workout can come from many sources, but often times can be
           difficult to muster if you base it on slow changing things like
-          physical changes. The most approprate mindset is to focus the long
+          physical changes. The most appropriate mindset is to focus the long
           terms benefits for your health, and over time the physical changes
-          will come aswell.
+          will come as well.
         </p>
 
         {/* Section to cover the terminology for lifting and exercise */}
@@ -262,7 +262,7 @@ function Education() {
           <p>
             Machine exercises often get a bad rep for not being "real lifts" but
             they often excel in their specific muscle building goal. Machines
-            allow you to train for certain lifts before you have the nessecarry
+            allow you to train for certain lifts before you have the necessary
             strength to preform them. For example; using machines you can train
             the movement pattern for pull ups, building your arm and lat
             strength enough to eventually preform them with bodyweight. Another

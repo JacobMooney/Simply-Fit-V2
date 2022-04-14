@@ -9,7 +9,7 @@ function WorkoutDisplay(props) {
   return (
     <>
       <Navbar />
-      <div className="container outterFlex">
+      <div className="container outerFlex">
         <OptionsForm
           formInfo={props.selectionInfo}
           handleChange={props.handleChange}
@@ -19,6 +19,7 @@ function WorkoutDisplay(props) {
         <div className="innerFlex">
           <div style={{width:'100%'}}>
             <h3>Example {props.selectionInfo.goalSelected} Workout</h3>
+            <hr />
             <WorkoutBuilder selections={props.selectionInfo} />
           </div>
         </div>

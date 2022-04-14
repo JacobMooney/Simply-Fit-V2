@@ -4,7 +4,7 @@
   padding: 1em 1em 0em;
 }
 
-.infoArea > * {
+.infoArea > * + * {
   margin-top: 1em;
 }
 
