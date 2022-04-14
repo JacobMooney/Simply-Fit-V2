@@ -6,25 +6,29 @@ import './Routine.css';
 function CardioOption({ option }) {
     if (option) {
         return (
-            <h5>
-                Cardio - 10 min
-            </h5>
+            <div className='exercise'>
+                <h5>
+                    Cardio - 10 min
+                </h5>
+            </div>
         )
     }
     return (
-        <div />
+        <></>
     );
 }
 function StretchingOption({ option }) {
     if (option) {
         return (
-            <h5>
-                Stretching - 10 min
-            </h5>
+            <div className='exercise'>
+                <h5>
+                    Stretching - 10 min
+                </h5>
+            </div>
         )
     }
     return (
-        <div />
+        <></>
     );
 }
 
@@ -32,7 +36,7 @@ function NumOfDays({ selections }) {
     const nDays = [];
     for (let i = 0; i < selections.daysSelected; i++) {
         nDays.push(
-            <div>
+            <>
                 <div className='day'>
                     <h3 className='dayHeader'>Workout: {i + 1}</h3>
                     <ul>
@@ -41,7 +45,7 @@ function NumOfDays({ selections }) {
                         <StretchingOption option={selections.stretching} />
                     </ul>
                 </div>
-            </div>
+            </>
         );
     }
     return nDays;

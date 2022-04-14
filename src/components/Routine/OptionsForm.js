@@ -7,14 +7,14 @@ function OptionsForm(props) {
     <div className="innerFlex">
       <div>
         <h3>Days Per Week:</h3>
-        <div>
-          <button value={2} name={"daysSelected"} onClick={props.handleChange}>
+        <div className="btnGroup">
+          <button className="optionBtn" value={2} name={"daysSelected"} onClick={props.handleChange}>
             2
           </button>
-          <button value={3} name={"daysSelected"} onClick={props.handleChange}>
+          <button className="optionBtn" value={3} name={"daysSelected"} onClick={props.handleChange}>
             3
           </button>
-          <button value={4} name={"daysSelected"} onClick={props.handleChange}>
+          <button className="optionBtn" value={4} name={"daysSelected"} onClick={props.handleChange}>
             4
           </button>
         </div>
@@ -22,8 +22,9 @@ function OptionsForm(props) {
       </div>
       <div>
         <h3>Training Goal:</h3>
-        <div>
+        <div className="btnGroup">
           <button
+            className="optionBtn"
             value={"Strength"}
             name={"goalSelected"}
             onClick={props.handleChange}
@@ -31,6 +32,7 @@ function OptionsForm(props) {
             Strength
           </button>
           <button
+            className="optionBtn"
             value={"Bodybuilding"}
             name={"goalSelected"}
             onClick={props.handleChange}
@@ -38,6 +40,7 @@ function OptionsForm(props) {
             BodyBuilding
           </button>
           <button
+            className="optionBtn"
             value={"Hybrid"}
             name={"goalSelected"}
             onClick={props.handleChange}
@@ -49,8 +52,9 @@ function OptionsForm(props) {
       </div>
       <div>
         <h3>Additional Options:</h3>
-        <div>
+        <div className="btnGroup">
           <button
+            className="optionBtn"
             value={currentInfo.cardio}
             name={"cardio"}
             onClick={props.toggleChange}
@@ -58,6 +62,7 @@ function OptionsForm(props) {
             Cardio
           </button>
           <button
+            className="optionBtn"
             value={currentInfo.stretching}
             name={"stretching"}
             onClick={props.toggleChange}
